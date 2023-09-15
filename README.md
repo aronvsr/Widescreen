@@ -11,7 +11,6 @@ Guess and rate the daily film, read nuanced reviews, discuss film with the commu
   <img src="./images/iPhone_15 3.jpg" width="160" title="Rate">
   <img src="./images/iPhone_15 4.jpg" width="160" title="Read">
   <img src="./images/iPhone_15 5.jpg" width="160" title="Discuss">
-  <img src="./images/iPhone_15 6.jpg" width="160" title="Chat">
 </p>
 
 ### Download

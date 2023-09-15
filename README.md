@@ -4,11 +4,12 @@
 Guess and rate the daily film, read nuanced reviews, discuss film with the community, chat privately with friends, and more!
 
 <p float="left">
-  <img src="./images/iPhone_15.jpg" width="150" title="Home">
-  <img src="./images/iPhone_15 2.jpg" width="150" title="Guess">
-  <img src="./images/iPhone_15 3.jpg" width="150" title="Rate">
-  <img src="./images/iPhone_15 4.jpg" width="150" title="Read">
-  <img src="./images/iPhone_15 5.jpg" width="150" title="Discuss">
+  <img src="./images/iPhone_15.jpg" width="160" title="Home">
+  <img src="./images/iPhone_15 2.jpg" width="160" title="Guess">
+  <img src="./images/iPhone_15 3.jpg" width="160" title="Rate">
+  <img src="./images/iPhone_15 4.jpg" width="160" title="Read">
+  <img src="./images/iPhone_15 5.jpg" width="160" title="Discuss">
+  <img src="./images/iPhone_15 6.jpg" width="160" title="Chat">
 </p>
 
 ### Download

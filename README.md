@@ -28,6 +28,7 @@ Touch up the design, implement new features, fix bugs, anything you can think of
 I'll make sure to the release updates with contributions to this project on the App Store and the Google Play Store within days.
 
 ### App preview
+
 <p float="left">
   <p float="left">
     <img src="./images/iPhone_15.jpg" width="256" title="Home">

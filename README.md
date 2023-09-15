@@ -1,9 +1,9 @@
 # Widescreen
 ### About the app
 
-Widescreen is an open-source app for iOS/Android, made for film enthusiasts!
-
 <img src="./images/frames.png" width="512"/>
+
+Widescreen is an open-source app for iOS/Android, made for film enthusiasts!
 
 Guess and rate the daily film, read nuanced reviews, discuss film with the community, chat privately with friends, and more!
 

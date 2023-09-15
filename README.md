@@ -23,7 +23,7 @@ How to run for testing/developing:
 - Open new terminal, run `npm install` to install the used dependencies.
 - Run `npm start`, and that's it! 
 
-I have hidden most .php URLs to my database for security reasons. If you need access to the back-end while contributing, contact me via <a href="https://instagram.com/aronvisser_" target="_blank" rel="noopener noreferrer">instagram</a> or in Widescreen chat (ID: 52079).
+I have hidden most .php URLs to my database for security reasons. If you need access to the back-end while contributing, contact me via <a href="https://instagram.com/aronvisser_">instagram</a> or in Widescreen chat (ID: 52079).
 
 Touch up the design, implement new features, fix bugs, anything you can think of. All contributions are welcome, as the code is messy, and probably full of bugs. Be wary, this is my first big React Native project so for very experienced people this code must be horror to look at. 
 

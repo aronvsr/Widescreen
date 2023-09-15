@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "Widescreen",
+    "slug": "Widescreen",
+    "version": "1.7",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#eeeedd"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/android-icon.png",
+          "color": "#eeeedd"
+        }
+      ]
+    ],
+    "android": {
+      "package": "<bundleIdentifier>",
+      "softwareKeyboardLayoutMode": "pan",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android-icon.png",
+        "backgroundColor": "#eeeedd"
+      },
+      "versionCode": 9
+    },
+    "ios": {
+      "buildNumber": "1.7",
+      "bundleIdentifier": "<bundleIdentifier>",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "fetch",
+          "remote-notification"
+        ]
+      }
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "<projectID>"
+      }
+    }
+  }
+}

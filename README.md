@@ -21,7 +21,9 @@ How to run for testing/developing:
 - Download this GitHub project.
 - Drag the files from this project to your expo project. Press 'Copy Folders' if asked. Make sure to overwrite like-named files/folders when asked.
 - Open new terminal, run `npm install` to install the used dependencies.
-- Run `npm start`, and that's it! 
+- Run `npm start`, and that's it!
+
+There is other ways to do this, but this explanation is for people who don't have experience with React Native. Do it however you like though.
 
 I have hidden most .php URLs to my database for security reasons. If you need access to the back-end while contributing, contact me via <a href="https://instagram.com/aronvisser_">Instagram</a> or in Widescreen chat (ID: 52079).
 

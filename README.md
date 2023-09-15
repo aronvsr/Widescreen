@@ -31,4 +31,5 @@ How to run for testing/developing:
 - Run `npm start`
 
 - If you need access to back-end while contributing, contact me via <a href="https://instagram.com/aronvisser_">instagram</a> or in Widescreen chat (ID: 52079).
+
 Touch up the design, implement new features, fix bugs, anything you can think of. All contributions are welcome, as the code is messy, and probably full of bugs. I'll make sure to the updates on the App Store and the Google Play Store within days.

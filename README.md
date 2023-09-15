@@ -5,19 +5,6 @@ Widescreen is an open-source app for iOS/Android, made for film enthusiasts!
 
 Guess and rate the daily film, read nuanced reviews, discuss film with the community, chat privately with friends, and more!
 
-<p float="left">
-  <p float="left">
-    <img src="./images/iPhone_15.jpg" width="200" title="Home">
-    <img src="./images/iPhone_15 2.jpg" width="200" title="Guess">
-    <img src="./images/iPhone_15 3.jpg" width="200" title="Rate">
-  </p>
-  <p float="left">
-    <img src="./images/iPhone_15 4.jpg" width="200" title="Read">
-    <img src="./images/iPhone_15 5.jpg" width="200" title="Discuss">
-    <img src="./images/iPhone_15 6.jpg" width="200" title="Chat">
-  </p>
-</p>
-
 ### Download
 
 - <a href="https://apps.apple.com/nl/app/widescreen/id6450876748?l=en-GB">iOS</a>
@@ -39,3 +26,17 @@ I have hidden most .php URLs to my database for security reasons. If you need ac
 Touch up the design, implement new features, fix bugs, anything you can think of. All contributions are welcome, as the code is messy, and probably full of bugs. Be wary, this is my first big React Native project so for very experienced people this code must be horror to look at. 
 
 I'll make sure to the release updates with contributions to this project on the App Store and the Google Play Store within days.
+
+
+<p float="left">
+  <p float="left">
+    <img src="./images/iPhone_15.jpg" width="200" title="Home">
+    <img src="./images/iPhone_15 2.jpg" width="200" title="Guess">
+    <img src="./images/iPhone_15 3.jpg" width="200" title="Rate">
+  </p>
+  <p float="left">
+    <img src="./images/iPhone_15 4.jpg" width="200" title="Read">
+    <img src="./images/iPhone_15 5.jpg" width="200" title="Discuss">
+    <img src="./images/iPhone_15 6.jpg" width="200" title="Chat">
+  </p>
+</p>

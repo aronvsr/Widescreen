@@ -3,6 +3,12 @@
 
 Guess and rate the daily film, read nuanced reviews, discuss film with the community, chat privately with friends, and more!
 
+<p float="left">
+  <img src="./images/iPhone_15.jpg" width="200" title="Home">
+  <img src="./images/iPhone_15 2.jpg" width="200" title="Guess">
+  <img src="./images/iPhone_15 3.jpg" width="200" title="Rate">
+</p>
+
 ### Download
 
 - <a href="https://apps.apple.com/nl/app/widescreen/id6450876748?l=en-GB">iOS</a>

@@ -9,13 +9,13 @@ Guess and rate the daily film, read nuanced reviews, discuss film with the commu
 
 ### Download
 
-- <a href="https://apps.apple.com/nl/app/widescreen/id6450876748?l=en-GB" target=”_blank”>iOS</a>
-- <a href="https://play.google.com/store/apps/details?id=com.bpstudios.Widescreen" target=”_blank”>Android</a>
+- <a href="https://apps.apple.com/nl/app/widescreen/id6450876748?l=en-GB">iOS</a>
+- <a href="https://play.google.com/store/apps/details?id=com.bpstudios.Widescreen">Android</a>
 
 ### Contribute
 
 How to run for testing/developing:
-- Make sure you have the React Native Expo environment set on your device. <a href="https://docs.expo.dev/get-started/installation/" target=”_blank”>Tutorial</a> by expo.
+- Make sure you have the React Native Expo environment set on your device. <a href="https://docs.expo.dev/get-started/installation/">Tutorial</a> by expo.
 - run `npx create-expo-app Widescreen`
 - Open expo project in preferred text editor.
 - Download this GitHub project.
@@ -23,7 +23,7 @@ How to run for testing/developing:
 - Open new terminal, run `npm install` to install the used dependencies.
 - Run `npm start`, and that's it! 
 
-I have hidden most .php URLs to my database for security reasons. If you need access to the back-end while contributing, contact me via <a href="https://instagram.com/aronvisser_" target=”_blank”>instagram</a> or in Widescreen chat (ID: 52079).
+I have hidden most .php URLs to my database for security reasons. If you need access to the back-end while contributing, contact me via <a href="https://instagram.com/aronvisser_" target="_blank" rel="noopener noreferrer">instagram</a> or in Widescreen chat (ID: 52079).
 
 Touch up the design, implement new features, fix bugs, anything you can think of. All contributions are welcome, as the code is messy, and probably full of bugs. Be wary, this is my first big React Native project so for very experienced people this code must be horror to look at. 
 

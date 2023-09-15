@@ -1,7 +1,14 @@
 # Widescreen
-### The app for film enthusiasts!
+### Features
 
-> Guess and rate the daily film, read nuanced reviews, discuss film with the community, chat privately with friends, and more!
+Guess and rate the daily film, read nuanced reviews, discuss film with the community, chat privately with friends, and more!
+
+### Download
+
+- <a href="https://apps.apple.com/nl/app/widescreen/id6450876748?l=en-GB">iOS</a>
+- <a href="https://play.google.com/store/apps/details?id=com.bpstudios.Widescreen">Android</a>
+
+### Contribute
 
 How to run for testing/developing:
 - Make sure you have the React Native Expo environment set on your device. <a href="https://docs.expo.dev/get-started/installation/">Tutorial</a> by expo.
@@ -13,4 +20,6 @@ How to run for testing/developing:
 - Run `npm start`
 
 - If you need access to back-end while contributing, contact me via <a href="https://instagram.com/aronvisser_">instagram</a> or in Widescreen chat (ID: 52079).
+
+  
 

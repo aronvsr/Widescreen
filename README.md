@@ -28,8 +28,8 @@ How to run for testing/developing:
 - Download this GitHub project.
 - Drag the files from this project to your expo project. Press 'Copy Folders' if asked. Make sure to overwrite like-named files/folders when asked.
 - Open new terminal, run `npm install` to install the used dependencies.
-- Run `npm start`
+- Run `npm start`, and that's it! 
 
-- If you need access to back-end while contributing, contact me via <a href="https://instagram.com/aronvisser_">instagram</a> or in Widescreen chat (ID: 52079).
+I have commented out most .php URLs to my database for security reasons. If you need access to the back-end while contributing, contact me via <a href="https://instagram.com/aronvisser_">instagram</a> or in Widescreen chat (ID: 52079).
 
 Touch up the design, implement new features, fix bugs, anything you can think of. All contributions are welcome, as the code is messy, and probably full of bugs. I'll make sure to the updates on the App Store and the Google Play Store within days.

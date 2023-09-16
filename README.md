@@ -25,7 +25,7 @@ How to run for testing/developing:
 
 There is other ways to do this, but this explanation is for people who don't have experience with React Native. Do it however you like though.
 
-I have hidden most .php URLs to my database for security reasons. If you need access to the back-end while contributing, contact me via <a href="https://instagram.com/aronvisser_">Instagram</a> or in Widescreen chat (ID: 52079).
+I have hidden most .php URLs to my database for security reasons. If you need access to the back-end while contributing, check <a href="./back-end/README.md">here</a>.
 
 Touch up the design, implement new features, fix bugs, implement a dark mode, improve visuals, anything you can think of. All contributions are welcome, as the code is messy, and probably full of bugs. Be wary, this is my first big React Native project so for very experienced people this code must be horror to look at. 
 

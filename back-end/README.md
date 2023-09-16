@@ -27,6 +27,6 @@ Latest post:
 All reviews:
 `https://bpstudios.nl/widescreen_backend/posts/fetch_posts.php`
 
-Need more URLs? Contact me.
+Need more URLs? Contact me via <a href="https://instagram.com/aronvisser_">Instagram</a> or in Widescreen chat (ID: 52079).
 
 

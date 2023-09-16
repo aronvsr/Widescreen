@@ -1,5 +1,7 @@
 # Backend basics
 
+These are the URLs used for fetching the main features and do not have any power to write files, hence me sharing them publicly.
+
 ### Fetch daily film
 
 Today's film:
@@ -26,3 +28,5 @@ All reviews:
 `https://bpstudios.nl/widescreen_backend/posts/fetch_posts.php`
 
 Need more URLs? Contact me.
+
+

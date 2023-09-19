@@ -41,8 +41,7 @@ function OtherProfile({ navigation, route }) {
       try {
         const response = await fetch(`<url to fetch user info>`);
         const data = await response.json();
-  
-        // Check if data is not undefined and has the expected properties
+
         if (data && data.userName) {
           setUserInfo(data);
         }
@@ -170,7 +169,7 @@ function OtherProfile({ navigation, route }) {
       </TouchableOpacity>
       <Text style={styles.pageTitle}>{userInfo != null ? userInfo.userName : userName}</Text>
       <View>
-        <Image source={{ uri: `https://bpstudios.nl/widescreen_backend/friends/pfps/${userID}.jpg` }} style={styles.profilePicture} />
+        <Image source={{ uri: `url to fetch pfp by id` }} style={styles.profilePicture} />
       </View>
       <View style={styles.statsContainer}>
         <View style={styles.statWrapper}>

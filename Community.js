@@ -6,6 +6,7 @@ import { Platform } from 'react-native';
 import { lighten, darken } from 'polished';
 import { useIsFocused } from '@react-navigation/native';
 import { BottomSheetModal, BottomSheetModalProvider, BottomSheetTextInput } from '@gorhom/bottom-sheet';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 let font1 = '';
 if (Platform.OS === 'ios') {
@@ -66,7 +67,7 @@ function Community({ navigation }) {
   };
 
   const initiateUpload = async () => {
-    setIsUploadingComment(true); 
+    setIsUploadingComment(true); // Set this immediately
   
     if (commentInput.trim() !== '') {
       uploadComment(selectedPost.postID, userName, userID, commentInput);
@@ -78,28 +79,33 @@ function Community({ navigation }) {
   const uploadComment = async (postID, creatorName, creatorID, commentContent) => {
     try {
       const response = await fetch(
-        `<link to post comment>`,
+        `<link to get comment content>`,
         {
           method: 'GET',
         }
       );
   
       if (response.ok) {
+        // Comment was uploaded successfully
         console.log('Comment uploaded successfully');
   
+        // Create a new comment object
         const newComment = {
           creatorName: creatorName,
           creatorID: creatorID,
           commentContent: commentContent,
         };
   
+        // Update the comments state with the new comment
         setComments((prevComments) => [...prevComments, newComment]);
   
+        // Update the selected post with the new comment
         setSelectedPost((prevSelectedPost) => ({
           ...prevSelectedPost,
           comments: [...prevSelectedPost.comments, newComment],
         }));
   
+        // Update the PostsData array with the updated post
         setPostsData((prevPostsData) =>
           prevPostsData.map((post) =>
             post.postID === postID
@@ -111,9 +117,11 @@ function Community({ navigation }) {
           )
         );
   
+        // Clear the comment input field
         setIsUploadingComment(false);
         setCommentInput('');
       } else {
+        // Handle errors, such as network errors or server errors
         console.error('Error uploading comment:', response.status);
       }
     } catch (error) {
@@ -137,7 +145,7 @@ function Community({ navigation }) {
     try {
       setIsLoading(true);
       setIsError(false);
-      const response = await fetch('<link to fetch posts>');
+      const response = await fetch('<url to fetch posts>');
       const data = await response.json(); 
 
       const sortedData = data.sort((a, b) => b.postID - a.postID);
@@ -205,8 +213,8 @@ function Community({ navigation }) {
   };
 
   function PostItem({ post }) {
-    const imageSrc = `<link to get image>`;
-    const pfpSrc = `<link to get pfp>`;
+    const imageSrc = `url to get post image`;
+    const pfpSrc = `url to get pfp by userID`;
     return (
       <View style={[styles.postContainer, {backgroundColor: lighten(0.05, getContainerBackgroundColor())}]}>
         <TouchableOpacity onPress={() => handleGoToProfile(post.creatorID, post.creatorName)} style={styles.creditsContainer}>
@@ -281,7 +289,7 @@ function Community({ navigation }) {
 
   const handleLike = async (postID) => {
     try {
-      const response = await fetch('<link to like post>', {
+      const response = await fetch('<url to like a post>', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -313,7 +321,7 @@ function Community({ navigation }) {
   
   const handleDislike = async (postID) => {
     try {
-      const response = await fetch('<link to dislike>', {
+      const response = await fetch('<url to dislike a post>', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -343,6 +351,8 @@ function Community({ navigation }) {
     }
   };
   
+  
+
   const getContainerBackgroundColor = () => {
     switch (selectedTheme) {
       case 'Theme1':
@@ -367,14 +377,15 @@ function Community({ navigation }) {
       <PostItem
         post={item}
         onPress={() => {
-          // Handle post press 
         }}
       />
     );
   };
 
   return (
+    <GestureHandlerRootView style={{ flex: 1 }}>
     <BottomSheetModalProvider>
+      
         <View style={[styles.container, { backgroundColor: getContainerBackgroundColor() }]}>
             <BottomSheetModal
               ref={bottomSheetModalRef}
@@ -401,12 +412,12 @@ function Community({ navigation }) {
                       keyExtractor={(item, index) => index.toString()}
                       renderItem={({ item }) => (
                         <View style={styles.commentContainer}>
-                          <View>
+                          <TouchableOpacity onPress={() => handleGoToProfile(item.creatorID, item.creatorName)}>
                             <Image
                               style={styles.commentPfp}
-                              source={{ uri: `<link to get pfp>` }}
+                              source={{ uri: `https://bpstudios.nl/widescreen_backend/friends/pfps/${item.creatorID}.jpg` }}
                             />
-                          </View>
+                          </TouchableOpacity>
                           <View>
                             <Text style={styles.commentAuthor}>{item.creatorName}</Text>
                             <Text style={styles.commentContent}>{item.commentContent}</Text>
@@ -460,6 +471,7 @@ function Community({ navigation }) {
           )}
         </View>
     </BottomSheetModalProvider>
+    </GestureHandlerRootView>
   );  
 }  
 

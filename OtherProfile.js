@@ -12,10 +12,10 @@ if (Platform.OS === 'ios') {
 } else if (Platform.OS === 'android') {
   font1 = Platform.select({
     android: 'sans-serif',
-    default: 'default font',
+    default: 'default font', 
   });
 } else {
-  font1 = 'default font'; 
+  font1 = 'default font';
 }
 
 function OtherProfile({ navigation, route }) {
@@ -27,6 +27,7 @@ function OtherProfile({ navigation, route }) {
   const [isAscending, setIsAscending] = useState(false);
   const [userDate, setUserDate] = useState(" ");
   const [userInfo, setUserInfo] = useState(null);
+  const [myID, setMyID] = useState(null);
 
   const PosterItem = ({ title, posterSrcDirect, posterSrcPath, rating }) => (
     <View style={styles.posterItem}>
@@ -38,9 +39,10 @@ function OtherProfile({ navigation, route }) {
   useEffect(() => {
     const fetchUserInfo = async () => {
       try {
-        const response = await fetch(`<link to fetch user info>`);
+        const response = await fetch(`<url to fetch user info>`);
         const data = await response.json();
   
+        // Check if data is not undefined and has the expected properties
         if (data && data.userName) {
           setUserInfo(data);
         }
@@ -70,6 +72,14 @@ function OtherProfile({ navigation, route }) {
 
   const retrievePreferences = async () => {
     try {
+      const savedUserID = await AsyncStorage.getItem('userID');
+      if (savedUserID !== null) {
+        setMyID(savedUserID);
+      }
+    } catch (error) {
+      console.log('Error retrieving preferences:', error);
+    }
+    try {
       const preferences = await AsyncStorage.getItem('preferences');
       if (preferences !== null) {
         const parsedPreferences = JSON.parse(preferences);
@@ -87,6 +97,12 @@ function OtherProfile({ navigation, route }) {
     const dayOfYear = now.dayOfYear();
     return dayOfYear;
   }
+
+  const handleGoToChat = (contactUserID, friendName) => {
+    if (myID != null) {
+      navigation.navigate('Chat', { contactUserID, myID, friendName });
+    }
+  };
 
   const retrieveFriendIDs = async () => {
     try {
@@ -128,7 +144,7 @@ function OtherProfile({ navigation, route }) {
     try {
       const friendIDs = await AsyncStorage.getItem('friendIDs');
       const parsedFriendIDs = friendIDs ? JSON.parse(friendIDs) : [];
-
+      
       const isFriend = parsedFriendIDs.includes(userID);
 
       if (isFriend) {
@@ -154,7 +170,7 @@ function OtherProfile({ navigation, route }) {
       </TouchableOpacity>
       <Text style={styles.pageTitle}>{userInfo != null ? userInfo.userName : userName}</Text>
       <View>
-        <Image source={{ uri: `<link to get pfp>` }} style={styles.profilePicture} />
+        <Image source={{ uri: `https://bpstudios.nl/widescreen_backend/friends/pfps/${userID}.jpg` }} style={styles.profilePicture} />
       </View>
       <View style={styles.statsContainer}>
         <View style={styles.statWrapper}>
@@ -191,6 +207,7 @@ function OtherProfile({ navigation, route }) {
           <Text style={styles.noFilmsText}>User doesn't share ratings</Text>
         )}
       </View>
+      <View style={{flexDirection: 'row'}}>
       <TouchableOpacity
         onPress={() => handleAddFriendPress()}
         style={[
@@ -210,6 +227,29 @@ function OtherProfile({ navigation, route }) {
           </View>
         )}
       </TouchableOpacity>
+      {userInfo != null ? (      
+      <TouchableOpacity
+        onPress={() => handleGoToChat(userID, userInfo.userName)}
+        style={[
+          styles.addButton,
+          { marginLeft: 15, backgroundColor: !isFriend ? darken(0.1, getContainerBackgroundColor()) : darken(0.03, getContainerBackgroundColor()) },
+        ]}
+      >
+        <Ionicons name={'chatbubbles-outline'} size={25} color="black" />
+      </TouchableOpacity>
+      ) : (      
+      <TouchableOpacity
+        onPress={() => handleGoToChat(userID, userName)}
+        style={[
+          styles.addButton,
+          { marginLeft: 15, backgroundColor: !isFriend ? darken(0.1, getContainerBackgroundColor()) : darken(0.03, getContainerBackgroundColor()) },
+          
+        ]}
+      >
+        <Ionicons name={'chatbubbles-outline'} size={25} color="black" />
+      </TouchableOpacity>
+      )}
+      </View>
     </View>
   );
 }

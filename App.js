@@ -139,6 +139,7 @@ function HomeScreen() {
       .then((status) => {
         setSeenStatus(status);
       })
+      updateUserInformation();
       setIsFilmChecked(true); 
     }
   }, [isFocused, isFilmChecked]);
@@ -166,6 +167,7 @@ function HomeScreen() {
     fetchReviewData();
     setIsLoadingDaily(true);
     checkMovieStatus(title, director, pegi, length);
+    updateUserInformation();
     setIsFilmChecked(true);
   
     setTimeout(() => {

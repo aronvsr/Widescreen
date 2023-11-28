@@ -33,18 +33,18 @@ I'll make sure to the release updates with contributions to this project on the 
 
 <p float="left">
   <p float="left">
-    <img src="./images/iPhone_15.jpg" width="256" title="Home">
-    <img src="./images/iPhone_15 2.jpg" width="256" title="Guess">
-    <img src="./images/iPhone_15 3.jpg" width="256" title="Gallery">
+    <img src="./images/V2_iPhone_15 1.jpg" width="256" title="Home">
+    <img src="./images/V2_iPhone_15 2.jpg" width="256" title="Guess">
+    <img src="./images/V2_iPhone_15 3.jpg" width="256" title="Gallery">
   </p>
   <p float="left">
-    <img src="./images/iPhone_15 4.jpg" width="256" title="Movie">
-    <img src="./images/iPhone_15 5.jpg" width="256" title="Frame">
-    <img src="./images/iPhone_15 6.jpg" width="256" title="Friends">
+    <img src="./images/V2_iPhone_15 4.jpg" width="256" title="Movie">
+    <img src="./images/V2_iPhone_15 5.jpg" width="256" title="Frame">
+    <img src="./images/V2_iPhone_15 6.jpg" width="256" title="Friends">
   </p>
     <p float="left">
-    <img src="./images/iPhone_15 7.jpg" width="256" title="Reviews">
-    <img src="./images/iPhone_15 8.jpg" width="256" title="Watchlist">
-    <img src="./images/iPhone_15 9.jpg" width="256" title="Later">
+    <img src="./images/V2_iPhone_15 7.jpg" width="256" title="Reviews">
+    <img src="./images/V2_iPhone_15 8.jpg" width="256" title="Watchlist">
+    <img src="./images/V2_iPhone_15 9.jpg" width="256" title="Later">
   </p>
 </p>

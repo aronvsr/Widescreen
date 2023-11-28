@@ -25,7 +25,7 @@ How to run for testing/developing:
 
 There is other ways to do this, but this explanation is for people who don't have experience with React Native. Do it however you like though.
 
-I have hidden most .php URLs to my database for security reasons. If you need access to the back-end while contributing, check <a href="./back-end/README.md">here</a>.
+I have hidden most .php URLs to my database for security reasons.
 
 I'll make sure to the release updates with contributions to this project on the App Store and the Google Play Store within days.
 
